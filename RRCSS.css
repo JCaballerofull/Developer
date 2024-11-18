@@ -1,0 +1,140 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*
+    background-color: rgb(170, 241, 218);
+    background-image: url("imagenes/Logotipo\ final_Mesa\ de\ trabajo\ 1.png");
+    background-size: 1080px;
+    */
+    
+}
+
+
+  
+.Header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(255, 255, 247);
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 0 20px;
+}
+@keyframes agrandarLogo {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.05); /* Tamaño agrandado (20% más grande) */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
+}
+
+.logo1 {
+    position: absolute;
+    left: 50%
+    transform: translateX(-50%);
+    max-height: 100px; /* Controla la altura de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    animation: agrandarLogo 4s ease-in-out infinite;
+}
+
+.inner_header {
+    display: flex;
+    justify-content: right; /* Centra la lista de navegación horizontalmente */
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    padding-right: 30px; /* Espacio a la derecha */
+    margin-top: 10px; /* Añade espacio por encima para separarlo del borde superior */
+}
+
+.navigation li {
+    margin: 0 20px; /* Espacio entre los elementos */
+}
+
+.navigation a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: 500; /* Hacer el texto más fuerte */
+    text-align: center; /* Centra el texto dentro de los enlaces */
+}
+
+.navigation li:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% */
+}
+
+.contenedor {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+  }
+
+.fondo {
+    width: 100%;
+    height: auto;
+}
+#Titulo  {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 3vw ;
+    font-style: normal;
+    position: absolute;
+    color: rgb(234, 234, 234);
+    left: 50%;
+    top: 11%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bottom {
+    text-align: center;
+}
+
+.botonanimado {
+    font-style: normal;
+    border: none;
+    background-color: yellow;
+    padding: 40px 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 150ms ease;
+    margin-left: 50%;
+    
+}
+button:hover{
+    background-color: rgb(145, 255, 0);
+    scale: 1.1;
+    color: azure;
+    /*transform: scale(1.1) translateX(400px)*/
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
